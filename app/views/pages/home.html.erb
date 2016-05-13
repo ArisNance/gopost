@@ -70,14 +70,14 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                <h1><a class="nav-brand" href=""> <img src="assets/logo.png" alt="gigninga" style="height: 75px; width: 75px;"></a></h1>
+                <h1><a class="nav-brand" href=""> <img id="round" src="assets/logo.png" alt="gigninga" style="height: 75px; width: 75px;"></a></h1>
               </div>
             </div>
             <div class="col-sm-7">
               <!-- Collect the nav toggling -->
               <div class="collapse navbar-collapse navbar-example" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                  <li><a href="#intro">Contribute</a></li>
+                  <!--<li><a href="#intro">Contribute</a></li>-->
                   <li><a href="#feature">Features</a></li>
                   <li><a href="#description">SignUp</a></li>
                   <li><a href="#screenshot">Login</a></li>
@@ -288,34 +288,34 @@
     <!-- feature end -->
 
     <!-- description start -->
-    <section id="description" class="description white">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 text-center">
-            <span class="sub-head wow fadeInLeft">think about</span>
-            <div class="title wow fadeInRight">
-              <h2>why GoPost best</h2>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6 wow pulse" data-wow-delay=".5s">
-            <img class="img-responsive" src="assets/iphone_half.png" alt="Why to choose us">
-          </div>
-          <div class="col-sm-6">
-            <ul class="description-list">
-              <li class="wow fadeInRight"><span class="des-icon"><i class="fa fa-bomb"></i></span>Nam nec tellus a odio tincidunt auctor a ornare odio</li>
-              <li class="wow fadeInRight"><span class="des-icon"><i class="fa fa-paw"></i></span>Nam nec tellus a odio tincidunt</li>
-              <li class="wow fadeInRight"><span class="des-icon"><i class="fa fa-birthday-cake"></i></span>Nam nec tellus a odio tincidunt auctor </li>
-              <li class="wow fadeInRight"><span class="des-icon"><i class="fa fa-fire-extinguisher"></i></span>Nam nec tellus a odio </li>
-              <li class="wow fadeInRight"><span class="des-icon"><i class="fa fa-magic"></i></span>Nam nec tellus a odio tincidunt auctor a ornare odio</li>
-              <li class="wow fadeInRight"><span class="des-icon"><i class="fa fa-rebel"></i></span>Nam nec tellus a odio tincidunt auctor a ornare</li>
-            </ul>
+    <!--<section id="description" class="description white">-->
+    <!--  <div class="container">-->
+    <!--    <div class="row">-->
+    <!--      <div class="col-sm-12 text-center">-->
+    <!--        <span class="sub-head wow fadeInLeft">think about</span>-->
+    <!--        <div class="title wow fadeInRight">-->
+    <!--          <h2>why GoPost best</h2>-->
+    <!--        </div>-->
+    <!--      </div>-->
+    <!--    </div>-->
+    <!--    <div class="row">-->
+    <!--      <div class="col-sm-6 wow pulse" data-wow-delay=".5s">-->
+    <!--        <img class="img-responsive" src="assets/iphone_half.png" alt="Why to choose us">-->
+    <!--      </div>-->
+    <!--      <div class="col-sm-6">-->
+    <!--        <ul class="description-list">-->
+    <!--          <li class="wow fadeInRight"><span class="des-icon"><i class="fa fa-bomb"></i></span>Nam nec tellus a odio tincidunt auctor a ornare odio</li>-->
+    <!--          <li class="wow fadeInRight"><span class="des-icon"><i class="fa fa-paw"></i></span>Nam nec tellus a odio tincidunt</li>-->
+    <!--          <li class="wow fadeInRight"><span class="des-icon"><i class="fa fa-birthday-cake"></i></span>Nam nec tellus a odio tincidunt auctor </li>-->
+    <!--          <li class="wow fadeInRight"><span class="des-icon"><i class="fa fa-fire-extinguisher"></i></span>Nam nec tellus a odio </li>-->
+    <!--          <li class="wow fadeInRight"><span class="des-icon"><i class="fa fa-magic"></i></span>Nam nec tellus a odio tincidunt auctor a ornare odio</li>-->
+    <!--          <li class="wow fadeInRight"><span class="des-icon"><i class="fa fa-rebel"></i></span>Nam nec tellus a odio tincidunt auctor a ornare</li>-->
+    <!--        </ul>-->
             <!-- /.description-list -->
-          </div>
-        </div>
-      </div>
-    </section>
+    <!--      </div>-->
+    <!--    </div>-->
+    <!--  </div>-->
+    <!--</section>-->
     <!-- description end-->
 
     <!-- video start -->
@@ -463,65 +463,62 @@
                     <span class="price">$0.00</span>
                     <span class="month">/per month</span>
                   </li>
-                  <li>Unlimited Space</li>
-                  <li>Unlimited Database</li>
-                  <li>Easy to Istall</li>
-                  <li>Unlimited Subdomains</li>
-                  <li>Dedicated Serer</li>
-                  <li> <a href="" class="btn">sign up</a></li>
+                  <li>Unlimited Scheduled Post to Twitter</li>
+                  <li>Unlimited Scheduled Post to Facebook</li>
+                  <li>Post to three social profiles</li>
+                  <li>Upload Videos and GIFs</li>
+                  <li>Schedule post months in advance</li>
+                  <%= link_to "sign up", new_user_registration_path, :class => "btn"  %>
                 </ul>
               </div>
             </div>
             <!-- /.price-block -->
           </div>
-          <div class="col-sm-4 wow bounceInUp" data-wow-duration="2s">
-            <div class="price-block active">
-              <div class="price-header">
-                <h3>basic plan</h3>
-                <i class="fa fa-cogs"></i>
-              </div>
-              <div class="price-plan">
-                <ul>
-                  <li>
-                    <span class="price">$9.00</span>
-                    <span class="month">/per month</span>
-                  </li>
-                  <li>Unlimited Space</li>
-                  <li>Unlimited Database</li>
-                  <li>Easy to Istall</li>
-                  <li>Unlimited Subdomains</li>
-                  <li>Dedicated Serer</li>
-                  <li> <a href="" class="btn">sign up</a></li>
-                </ul>
-              </div>
-            </div>
+      <!--    <div class="col-sm-4 wow bounceInUp" data-wow-duration="2s">-->
+      <!--      <div class="price-block active">-->
+      <!--        <div class="price-header">-->
+      <!--          <h3>basic plan</h3>-->
+      <!--          <i class="fa fa-cogs"></i>-->
+      <!--        </div>-->
+      <!--        <div class="price-plan">-->
+      <!--          <ul>-->
+      <!--            <li>-->
+      <!--              <span class="price">$0.00</span>-->
+      <!--              <span class="month">/per month</span>-->
+      <!--            </li>-->
+      <!--            <li>Unlimited Post</li>-->
+      <!--            <li>Unlimited Schedue Post</li>-->
+      <!--            <li> <a href="" class="btn">sign up</a></li>-->
+      <!--          </ul>-->
+      <!--        </div>-->
+      <!--      </div>-->
             <!-- /.price-block -->
-          </div>
-          <div class="col-sm-4 wow bounceInUp" data-wow-duration="3s">
-            <div class="price-block">
-              <div class="price-header">
-                <h3>devloper plan</h3>
-                <i class="fa fa-suitcase"></i>
-              </div>
-              <div class="price-plan">
-                <ul>
-                  <li>
-                    <span class="price">$29.00</span>
-                    <span class="month">/per month</span>
-                  </li>
-                  <li>Unlimited Space</li>
-                  <li>Unlimited Database</li>
-                  <li>Easy to Istall</li>
-                  <li>Unlimited Subdomains</li>
-                  <li>Dedicated Serer</li>
-                  <li> <a href="" class="btn">sign up</a></li>
-                </ul>
-              </div>
-            </div>
+      <!--    </div>-->
+      <!--    <div class="col-sm-4 wow bounceInUp" data-wow-duration="3s">-->
+      <!--      <div class="price-block">-->
+      <!--        <div class="price-header">-->
+      <!--          <h3>devloper plan</h3>-->
+      <!--          <i class="fa fa-suitcase"></i>-->
+      <!--        </div>-->
+      <!--        <div class="price-plan">-->
+      <!--          <ul>-->
+      <!--            <li>-->
+      <!--              <span class="price">$29.00</span>-->
+      <!--              <span class="month">/per month</span>-->
+      <!--            </li>-->
+      <!--            <li>Unlimited Space</li>-->
+      <!--            <li>Unlimited Database</li>-->
+      <!--            <li>Easy to Istall</li>-->
+      <!--            <li>Unlimited Subdomains</li>-->
+      <!--            <li>Dedicated Serer</li>-->
+      <!--            <li> <a href="" class="btn">sign up</a></li>-->
+      <!--          </ul>-->
+      <!--        </div>-->
+      <!--      </div>-->
             <!-- /.price-block -->
-          </div>
-        </div>
-      </div>
+      <!--    </div>-->
+      <!--  </div>-->
+      <!--</div>-->
     </section>
     <!-- price end -->
 
@@ -544,41 +541,41 @@
     <!-- download end -->
 
     <!-- support start -->
-    <section id="support" class="support white">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 text-center">
-            <span class="sub-head wow fadeInLeft">stay close</span>
-            <div class="title wow fadeInRight">
-              <h2>help & support</h2>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4 wow bounceInUp" data-wow-duration="1s">
-            <div class="support-block">
-              <span class="support-icon"><i class="fa fa-bitbucket"></i></span>
-              <h3>Product Support</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
-            </div>
-          </div>
-          <div class="col-sm-4 wow bounceInUp" data-wow-duration="2s">
-            <div class="support-block active">
-              <span class="support-icon"><i class="fa fa-bullhorn"></i></span>
-              <h3>Product Support</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
-            </div>
-          </div>
-          <div class="col-sm-4 wow bounceInUp" data-wow-duration="3s">
-            <div class="support-block">
-              <span class="support-icon"><i class="fa fa-stethoscope"></i></span>
-              <h3>Product Support</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!--<section id="support" class="support white">-->
+    <!--  <div class="container">-->
+    <!--    <div class="row">-->
+    <!--      <div class="col-sm-12 text-center">-->
+    <!--        <span class="sub-head wow fadeInLeft">stay close</span>-->
+    <!--        <div class="title wow fadeInRight">-->
+    <!--          <h2>help & support</h2>-->
+    <!--        </div>-->
+    <!--      </div>-->
+    <!--    </div>-->
+    <!--    <div class="row">-->
+    <!--      <div class="col-sm-4 wow bounceInUp" data-wow-duration="1s">-->
+    <!--        <div class="support-block">-->
+    <!--          <span class="support-icon"><i class="fa fa-bitbucket"></i></span>-->
+    <!--          <h3>Product Support</h3>-->
+    <!--          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>-->
+    <!--        </div>-->
+    <!--      </div>-->
+    <!--      <div class="col-sm-4 wow bounceInUp" data-wow-duration="2s">-->
+    <!--        <div class="support-block active">-->
+    <!--          <span class="support-icon"><i class="fa fa-bullhorn"></i></span>-->
+    <!--          <h3>Product Support</h3>-->
+    <!--          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>-->
+    <!--        </div>-->
+    <!--      </div>-->
+    <!--      <div class="col-sm-4 wow bounceInUp" data-wow-duration="3s">-->
+    <!--        <div class="support-block">-->
+    <!--          <span class="support-icon"><i class="fa fa-stethoscope"></i></span>-->
+    <!--          <h3>Product Support</h3>-->
+    <!--          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>-->
+    <!--        </div>-->
+    <!--      </div>-->
+    <!--    </div>-->
+    <!--  </div>-->
+    <!--</section>-->
     <!-- support end --> 
 
     <!-- subscription start -->
@@ -811,7 +808,7 @@
 		  var styles = [
 			{
 			  stylers: [
-				{ hue: "#0AABE1" },
+				{ hue: "#e91e60" },
 				{ saturation: 0 }
 			  ]
 			},

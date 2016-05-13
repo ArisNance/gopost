@@ -218,7 +218,7 @@
     }
    .social-icon .fa {
     font-size: 18px;
-    color: #0aabe1;
+    color: #e91e60;
     width: 45px;
     height: 45px;
     border-radius: 50%;
@@ -240,7 +240,7 @@
     padding: 7px 20px;
   }  
   .contact .nav-tabs li .fa {
-    background: #0aabe1;
+    background: #e91e60;
     border-radius: 50%;
     box-shadow: 0 0 0 10px rgb(255, 255, 255);
     color: #fff;
@@ -259,7 +259,7 @@
     box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.75);
     -webkit-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.75);
     -moz-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.75);
-    color: #0aabe1;
+    color: #e91e60;
   }
   .contact .contact-info h2 {
     margin-bottom: 20px;

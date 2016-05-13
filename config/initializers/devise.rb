@@ -6,7 +6,7 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  config.secret_key = '5329fe1e2545ac51c826672db3524458f64288c5bf2b708bf4dc5ff635b437175cea4b43171adf8e1a12b4c12fd2397043f4427272c8d8feeb62bf2b3dea303c'
+  # config.secret_key = 'a52bc36fe904b2939844471bd21f8eab460efbb179cc84524a030a8b7d357908ca961ab18ed177deb2d43779121822f6449ae3a65e1847b85d6c3761dbc55892'
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
@@ -59,18 +59,18 @@ Devise.setup do |config|
   # enable it only for database (email + password) authentication.
   # config.params_authenticatable = true
 
-  # Tell if authentication through https Auth is enabled. False by default.
-  # It can be set to an array that will enable https authentication only for the
-  # given strategies, for example, `config.https_authenticatable = [:database]` will
+  # Tell if authentication through HTTP Auth is enabled. False by default.
+  # It can be set to an array that will enable http authentication only for the
+  # given strategies, for example, `config.http_authenticatable = [:database]` will
   # enable it only for database authentication. The supported strategies are:
   # :database      = Support basic authentication with authentication key + password
-  # config.https_authenticatable = false
+  # config.http_authenticatable = false
 
   # If 401 status code should be returned for AJAX requests. True by default.
-  # config.https_authenticatable_on_xhr = true
+  # config.http_authenticatable_on_xhr = true
 
-  # The realm used in https Basic Authentication. 'Application' by default.
-  # config.https_authentication_realm = 'Application'
+  # The realm used in Http Basic Authentication. 'Application' by default.
+  # config.http_authentication_realm = 'Application'
 
   # It will change confirmation, password recovery and other workflows
   # to behave the same regardless if the e-mail provided was right or wrong.
@@ -82,7 +82,7 @@ Devise.setup do |config|
   # Notice that if you are skipping storage for all authentication paths, you
   # may want to disable generating routes to Devise's sessions controller by
   # passing skip: :sessions to `devise_for` in your config/routes.rb
-  config.skip_session_storage = [:https_auth]
+  config.skip_session_storage = [:http_auth]
 
   # By default, Devise cleans up the CSRF token on authentication to
   # avoid CSRF token fixation attacks. This means that, when using AJAX
@@ -102,7 +102,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 11
 
   # Set up a pepper to generate the hashed password.
-  # config.pepper = '99903b2bf38135d6d5feb93d061209a46d9360368fafe3d327d7eef5e68d9e33ccfc92c088bd7450ac4e1c47520e5193d03493891a89acd937a846eac104035d'
+  # config.pepper = 'fd3c32fe249418e4e835852feb870a1a0bc3e4dcdcd8d49c59531e0fd084de04717e73886070bede3d3d9c616528ff8b5af28a7547c20dbb7d0e722845e3d226'
 
   # Send a notification email when the user's password is changed
   # config.send_password_change_notification = false
@@ -235,7 +235,7 @@ Devise.setup do |config|
   # The "*/*" below is required to match Internet Explorer requests.
   # config.navigational_formats = ['*/*', :html]
 
-  # The default https method used to sign out a resource. Default is :delete.
+  # The default HTTP method used to sign out a resource. Default is :delete.
   config.sign_out_via = :delete
 
   # ==> OmniAuth

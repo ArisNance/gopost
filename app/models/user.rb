@@ -4,6 +4,7 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  validates_presence_of :time_zone
+    # commented out code below. ActiveRecord was giving unpermitted parameter
+  # validates_presence_of :time_zone
   
 end
