@@ -1,6 +1,5 @@
 class RegistrationsController < Devise::RegistrationsController
-    before_filter :configure_permitted_parameters
-    
+
     private
 
     def sign_up_params

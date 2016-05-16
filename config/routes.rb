@@ -1,8 +1,14 @@
 Rails.application.routes.draw do
-  devise_for :users, controller: { registrations: 'registrations'}
+
+  get 'auth/:provider/callback', to: 'connections#create'
+  resources :connections, only: [:destroy]
+
+  devise_for :users, controllers: { registrations: 'registrations'}
   get 'pages/home'
   root 'pages#home'
   get 'dashboard', to: 'pages#dashboard'
+  
+  delete 'sign_out', to: 'sessions#destroy', as: 'sign_out'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
